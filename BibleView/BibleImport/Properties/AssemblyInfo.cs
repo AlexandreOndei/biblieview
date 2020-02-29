@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BiblieImport")]
+[assembly: AssemblyTitle("BibleImport")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BiblieImport")]
+[assembly: AssemblyProduct("BibleImport")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b4dcc919-1f55-4f0c-8884-71a04e90428f")]
+[assembly: Guid("ade31b61-772c-45c3-b068-2ee2b7e68a7a")]
 
 // Version information for an assembly consists of the following four values:
 //

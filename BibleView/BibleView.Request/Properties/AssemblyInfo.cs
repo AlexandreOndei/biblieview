@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BiblieView.Request")]
+[assembly: AssemblyTitle("BibleView.Request")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BiblieView.Request")]
+[assembly: AssemblyProduct("BibleView.Request")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("af45a000-8f60-4dc6-8c61-7c6f972db950")]
+[assembly: Guid("76eb78e0-7905-4443-b5bb-69a6e5d41f54")]
 
 // Version information for an assembly consists of the following four values:
 //

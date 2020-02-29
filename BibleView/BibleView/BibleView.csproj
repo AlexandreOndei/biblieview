@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibleView.Request\BibleView.Request.csproj">
+      <Project>{76eb78e0-7905-4443-b5bb-69a6e5d41f54}</Project>
+      <Name>BibleView.Request</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BiblieImport.Properties
+namespace BibleImport.Properties
 {
 
 
