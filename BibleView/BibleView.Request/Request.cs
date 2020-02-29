@@ -197,7 +197,8 @@ namespace BibleView.Request
                 int verseNumber = 1;
                 foreach (var match in matches)
                 {
-                    var text = Regex.Replace(Regex.Replace(match.ToString(), "<p.*style=\".*\"", "").Replace("</p>", ""), ">\\d{1,}\\..*</strong>", "").Trim();
+                    var text = Regex.Replace(Regex.Replace(match.ToString(), "<p.*style=\".*\"", "").Replace("</p>", ""), ">\\d{1,}\\..*</strong>", "")
+                        .Replace("&amp;quot;&amp;quot;", "").Replace("¶ ", "").Trim();
                     chapter.VersesList.Add(new Models.Verse
                     {
                         Number = verseNumber++,
