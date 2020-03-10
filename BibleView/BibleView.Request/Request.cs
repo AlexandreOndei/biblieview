@@ -63,7 +63,7 @@ namespace BibleView.Request
                 }
             };
 
-            Serialize(version);
+            Save(version);
         }
 
         public static void ImportBibles(Action<string> statusCallback, Action<int> progressSettingsCallback)
@@ -92,13 +92,13 @@ namespace BibleView.Request
 
                         book.ChaptersList.Add(chapter);
 
-                        Serialize(version);
+                        Save(version);
                     }
                 }
 
                 statusCallback($"Salvando versâo {version.Name}");
 
-                Serialize(version);
+                Save(version);
             }
         }
 
@@ -198,7 +198,7 @@ namespace BibleView.Request
                 foreach (var match in matches)
                 {
                     var text = Regex.Replace(Regex.Replace(match.ToString(), "<p.*style=\".*\"", "").Replace("</p>", ""), ">\\d{1,}\\..*</strong>", "")
-                        .Replace("&amp;quot;&amp;quot;", "").Replace("¶ ", "").Trim();
+                        .Replace("&amp;quot;&amp;quot;", "").Replace("¶ ", "").Replace("&amp;quot;", "").Replace("&amp;quot; ", "").Trim();
                     chapter.VersesList.Add(new Models.Verse
                     {
                         Number = verseNumber++,
@@ -232,15 +232,12 @@ namespace BibleView.Request
             }
         }
 
-        private static void Serialize(Models.Version version)
+        private static void Save(Models.Version version)
         {
             if (!Directory.Exists("data"))
                 Directory.CreateDirectory("data");
 
-            XmlSerializer serializer = new XmlSerializer(typeof(Models.Version));
-            TextWriter writer = new StreamWriter($"data/{version.Name}.xml");
-            serializer.Serialize(writer, version);
-            writer.Close();
+            Serialization.Serialize(version, $"data/{version.Name}.xml");
         }
     }
 }

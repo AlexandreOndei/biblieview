@@ -8,6 +8,9 @@ namespace BibleView
 {
     static class Program
     {
+        public static frmMain FrmMain { get; set; }
+        public static frmVerseView FrmVerseView { get; set; }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
